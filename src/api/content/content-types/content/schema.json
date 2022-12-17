@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "Page do Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ContentOfPost": {
+      "type": "richtext",
+      "default": "You can inser text, image, link and others",
+      "required": true
+    },
+    "Type": {
+      "type": "string",
+      "required": true
+    },
+    "Title": {
+      "type": "text",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "You can inser text, image, link and others",
+      "required": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Time": {
+      "type": "time",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "HeaderImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
