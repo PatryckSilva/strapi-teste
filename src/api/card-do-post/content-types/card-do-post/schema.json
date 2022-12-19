@@ -32,6 +32,9 @@
       "type": "uid",
       "targetField": "TitleOfCard",
       "required": true
+    },
+    "EstimatedTime": {
+      "type": "string"
     }
   }
 }

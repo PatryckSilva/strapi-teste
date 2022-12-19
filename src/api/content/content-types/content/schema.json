@@ -53,6 +53,10 @@
         "videos",
         "audios"
       ]
+    },
+    "EstimatedTime": {
+      "type": "string",
+      "required": true
     }
   }
 }
